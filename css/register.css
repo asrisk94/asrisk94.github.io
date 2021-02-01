@@ -1,0 +1,67 @@
+#frame {
+    width: 1024px;
+    height: 768px;
+    border: 1px solid black;
+    margin: auto;
+}
+
+#top {
+    width: 1024px;
+    height: 368px;
+    border-bottom: 1px solid black;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+#bottom {
+    width: 1024px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/********************************/
+#registerForm {
+    width: 350px;
+    height: 280px;
+    border: 1px solid black;
+    padding-top: 20px;
+    border-radius: 5px;
+}
+#registerForm td {
+    padding: 5px;
+}
+#registerBtn {
+    margin-top: 20px;
+    width: 80px;
+    height: 30px;
+}
+/*****************************/
+#bottom table {
+    border: 1px solid black;
+    width: 1000px;
+    border-collapse: collapse;
+    box-sizing: border-box;
+}
+#bottom #bottom1 {
+    margin-right: 19px;
+}
+#bottom #bottom2 {
+    overflow: scroll;
+    box-sizing: border-box;
+}
+#bottom th {
+    border: 1px solid black;
+    border-bottom: none;
+    width: 250px;
+}
+#bottom td {
+    border: 1px solid black;
+    width: 250px;
+}
+/*****************************/
+.warning {
+    color: red;
+    font-weight: bold;
+}

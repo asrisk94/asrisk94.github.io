@@ -1,0 +1,187 @@
+#frame {
+    width: 1024px;
+    height: 768px;
+    border: 1px solid rgb(197, 197, 207);
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(253, 253, 253);  
+}
+/************************************/
+header {
+    height: 150px;
+    border-bottom: 7px double black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+header li {
+    font-size: 55px;
+    font-weight: 700;
+    /* margin-left: 100px; */
+    margin-right: 30px;
+    list-style:armenian;
+}
+/***********************************/
+section {
+    display: flex;
+    align-items: stretch;
+}
+#section-left {
+    width: 720px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+#section-right {
+    width: 304px;
+    height: 618px;
+    display: flex;
+    align-items: center;
+}
+
+
+
+#section-left > div {
+    display: flex;
+    flex-direction: column;
+}
+#section-left h2 {
+    align-self: center;
+    font-size: 30px;
+    margin-top: 30px;
+    margin-left: 5px;
+}
+#section-left #mainImg {
+    align-self: center;
+    width: 350px;
+    height: 240px;
+    margin-top: 10px;
+}
+
+#mainImg img {
+    align-self: center;
+    width: 350px;
+    margin-bottom: 0;
+}
+#mainImg p {
+    margin-top: 3px;
+    font-size: 15px;
+}
+
+#section-left > div > p:nth-of-type(1) {
+    font-size: 16px;
+    width: 600px;
+    line-height: 25px;
+    margin: 0 50px;
+    text-align: justify;
+}
+#section-left > div > p:nth-of-type(2) {
+    font-size: 16px;
+    line-height: 25px;
+    margin-top: 40px;
+    margin-right: 50px;
+    align-self: flex-end;
+}
+
+
+
+#line {
+    width: 304px;
+    height: 570px;
+    border-left: 1px solid black;
+    display: flex;
+    flex-direction: column;
+}
+#ad1, #ad2 {
+    align-self: center;
+    width: 280px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#ad1 {
+    border-bottom: 1px dotted black;
+}
+#line a:hover {
+    text-decoration: underline;
+}
+
+#line img {
+    width: 220px;
+    height: 180px;
+    object-fit: cover;
+    margin: 0;
+}
+#line p {
+    width: 220px;
+    margin: 0;
+    margin-top: 10px;
+    font-size: 18px;
+    text-align: center;
+}
+#line a {
+    text-decoration: none;
+}
+
+/*******************************/
+#crazy1 {
+    width: 200px;
+    height: 100px;
+    left: 200px;
+    bottom: 200px;
+    position: fixed;
+    display: relative;
+    flex-direction:column;
+    background-color: white;
+    border: 1px solid black;
+    transition-duration: 1s; /* transform 일어나는 시간 지정 */
+    transition-property: all;
+    overflow: hidden;
+}
+
+#crazy2 {
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    left: 0;
+    bottom: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* transition-duration: 1s; /* transform 일어나는 시간 지정 */
+    transition-property: all;
+    overflow: visible;
+}
+
+#crazy1 input {
+    width: 25px;
+    height: 25px;
+    border: none;
+    background-color: white;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    z-index: 1;
+}
+
+#crazy2 p {
+    width: 100px;
+    height: 30px;
+}
+#crazy1 img {
+    position: absolute;
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    left: 200px;
+    bottom: 50px;
+    z-index: 0;
+}

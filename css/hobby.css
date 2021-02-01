@@ -1,0 +1,115 @@
+#mainFrame {
+    width: 1024px;
+    height: 768px;
+    border: 1px solid skyblue;
+    margin: auto;
+    background-color: black;
+}
+/********************************/
+.btnFrame {
+    width: 1024px;
+    height: 118px;
+    margin: 0;
+
+    display: flex;
+    justify-content: center;
+}
+[type=button] {
+    width: 60px;
+    height: 25px;
+
+    background-color: lightslategray;
+    border: none;
+    border-radius: 10px;
+    
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 75px;
+    margin-right: 10px;
+}
+
+/*******************************/
+#imgContainer {
+    overflow: hidden;
+}
+.inner {
+    width: 4096px;
+    height: 500px;
+    overflow: hidden;
+    transition-duration: 0.5s;
+}
+.imgFrame {
+    width: 1024px;
+    float: left;
+    text-align: center;
+    /* object-fit: cover; */
+    position: relative;
+    transition-property: all;
+    transition-duration: 1s;
+}
+.imgFrame::after {
+    content:'';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1024px;
+    height: 500px;
+    background: rgba(0,0,0,.5);
+    z-index: 1;
+    opacity: 0;
+    transition: all;
+    transition-duration: 0.5s;
+}
+.imgFrame:hover::after {
+    opacity: 1;
+}
+.imgFrame:hover .imgHoverUp {
+    bottom: 50%;
+}
+.imgFrame:hover .imgHoverDown {
+    top: 50%;
+}
+img {
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+}
+#fc {
+    float: left;
+    padding: 0;
+    margin: 0;
+}
+.fc {
+    width: 512px;
+    height: 500px;
+    float: left;
+}
+/*********************************/
+.imgHoverUp {
+    position: absolute;
+    bottom: 150%;
+    left: 10%;
+    z-index: 2;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+.imgHoverDown {
+    position: absolute;
+    top: 150%;
+    left: 10%;
+    z-index: 2;
+    color: white;
+    font-size: 20px;
+    transition-property: all;
+    transition-duration: 0.5s;
+    text-align: left;
+}
+.imgHoverDown p {
+    line-height: 30px;
+}
